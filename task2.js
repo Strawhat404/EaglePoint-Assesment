@@ -57,7 +57,7 @@ async function mock(url) {
         const data = await fetchDatawithRetry('https://api.eaglepoint.yoseph.com/data', 5);
         console.log('"\final Value reult:', data);  
 
-    }catch(finalErro){
+    }catch(finalError){
         console.log("\n final Error:", finalError.message); 
     }
     })();
