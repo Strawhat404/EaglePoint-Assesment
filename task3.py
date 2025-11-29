@@ -14,7 +14,7 @@ class RateLimiter:
         self.limit = limit 
         #maximum number of requests allowed per time unit
 
-        #the time duration in seconds
+      #the time duration in seconds
         self.window = window_seconds 
 
         #serve as user request history storage
