@@ -1,7 +1,7 @@
 # EaglePoint AI - Technical Assessment Submission
 
 ## Overview
-This repository contains solutions for the Full-stack Developer Technical Assessment.
+This repository contains solutions for the Full-stack Developer Technical Assessment.The searched url links and more detailed documentation is shared on Google Docs https://docs.google.com/document/d/1DVtA7zH2mRna-WS9-puwgg2A2nd_xat4xOJ-HdlsMR4/edit?usp=sharing
 - **Task 1:** Smart Text Analyzer (Python)
 - **Task 2:** Async Data Fetcher with Retry (JavaScript)
 - **Task 3:** Rate Limiter (Python)
