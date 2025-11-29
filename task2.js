@@ -1,6 +1,9 @@
+
+
+
 //define a function that returns a promise that resolves after a delay
 
-//the wait function combines Promise + siteTimeout to create an async delay
+//the wait function combines Promis + siteTimeout to create an async delay
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 //this is mock function that simulates API calls with network delays and random failure 
@@ -15,7 +18,7 @@ async function mock(url) {
     //generate random number between 0 and 1 for success or failure
     const randomHappen = Math.random();//returns floating number
 
-    //if random number is less than 0.7 or 70% simulates a network failure
+    //if random number is less than 0.7 or 70% simulates a network failure bc of high chance of failure
     if (randomHappen <0.7){
         throw new Error ('Network Error Occurred');
 
@@ -24,13 +27,18 @@ async function mock(url) {
         return{
             status: 200,//http status code for ok
             data: {
-                message: 'Data fetched successfully from ' }
-            };
-        }
+                message: 'Data fetched successfully from ' + url // add url here 
+            }
+        };
     }
- //The main solution i though
+}
+
+ //The main solution of the task
     async function fetchDatawithRetry(url,maxRetries){
+      let attempt_count = 0; // debug counter
         for(let i = 0; i<maxRetries; i++){
+            attempt_count++;
+            console.log("attempt_count:", attempt_count); 
             try{
                 const result = await mock(url);
                 return result;//success return 
@@ -71,4 +79,3 @@ async function mock(url) {
         console.log("\n final Error:", finalError.message); 
     }
     })();
-
