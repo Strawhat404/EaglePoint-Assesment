@@ -6,7 +6,7 @@ This repository contains my solutions for the Full-stack Developer Technical Ass
 
 ### 1. Smart Text Analyzer (Python)
 *   **File:** `task1.py`
-*   **Description:** A text processing tool that cleans input using Regex, calculates word statistics (average length, longest words), and generates frequency maps using `collections.Counter`.
+*   **Description:** A text processing tool that cleans input using Regex but later changed to manual text cleaning to enhance readablity , calculates word statistics (average length, longest words), and generates frequency maps using `collections.Counter`.
 
 ### 2. Async Data Fetcher (JavaScript)
 *   **File:** `task2.js`
