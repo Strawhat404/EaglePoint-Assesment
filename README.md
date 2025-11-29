@@ -1,8 +1,8 @@
-# 🦅 Eagle Point AI - Technical Assessment
+#  Eagle Point AI - Technical Assessment
 
 This repository contains my solutions for the Full-stack Developer Technical Assessment. It demonstrates proficiency in **Python** and **JavaScript**, focusing on algorithmic thinking, asynchronous programming, and system design concepts.
 
-## 📂 Project Structure
+##  Project Structure
 
 ### 1. Smart Text Analyzer (Python)
 *   **File:** `task1.py`
@@ -18,7 +18,7 @@ This repository contains my solutions for the Full-stack Developer Technical Ass
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 **Prerequisites:** Python 3.x and Node.js installed.
 
